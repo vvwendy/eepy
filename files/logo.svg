@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#3A241B"/>
+      <stop offset="100%" stop-color="#171010"/>
+    </radialGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0.4" y2="1">
+      <stop offset="0%" stop-color="#E8944A"/>
+      <stop offset="100%" stop-color="#C05B32"/>
+    </linearGradient>
+    <linearGradient id="tailg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#A6462A"/>
+      <stop offset="100%" stop-color="#8F3A24"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#glow)"/>
+
+  <!-- moon -->
+  <circle cx="140" cy="128" r="34" fill="#F2D5A8" opacity="0.92"/>
+  <circle cx="153" cy="118" r="30" fill="url(#glow)"/>
+
+  <!-- zzz -->
+  <g stroke="#F2D5A8" stroke-width="11" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+    <path d="M356 96 h34 l-34 34 h34"/>
+    <path d="M412 156 h26 l-26 26 h26" opacity="0.7"/>
+  </g>
+
+  <!-- curled body -->
+  <circle cx="256" cy="316" r="140" fill="url(#fur)"/>
+
+  <!-- tail wrapping around the front -->
+  <path d="M132 350 C 150 428, 250 462, 340 428" fill="none" stroke="url(#tailg)" stroke-width="52" stroke-linecap="round"/>
+  <!-- cream tail tip -->
+  <circle cx="340" cy="428" r="27" fill="#F2D5A8"/>
+
+  <!-- head resting on body -->
+  <g>
+    <!-- ears -->
+    <path d="M262 188 L286 138 L316 186 Z" fill="#C05B32"/>
+    <path d="M352 182 L392 142 L398 196 Z" fill="#C05B32"/>
+    <path d="M272 184 L288 152 L306 183 Z" fill="#8F3A24"/>
+    <path d="M358 180 L384 154 L388 190 Z" fill="#8F3A24"/>
+    <!-- head -->
+    <circle cx="326" cy="248" r="86" fill="url(#fur)"/>
+    <!-- muzzle patch -->
+    <ellipse cx="352" cy="284" rx="52" ry="40" fill="#F2D5A8"/>
+    <!-- nose -->
+    <ellipse cx="386" cy="272" rx="15" ry="12" fill="#4A2A1C"/>
+    <!-- closed eyes: content downward arcs -->
+    <path d="M282 240 q 14 12 28 0" fill="none" stroke="#4A2A1C" stroke-width="9" stroke-linecap="round"/>
+    <path d="M336 236 q 14 12 28 0" fill="none" stroke="#4A2A1C" stroke-width="9" stroke-linecap="round"/>
+    <!-- sleepy cheek blush -->
+    <circle cx="276" cy="272" r="12" fill="#C05B32" opacity="0.55"/>
+  </g>
+</svg>
